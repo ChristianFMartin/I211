@@ -1,0 +1,41 @@
+CREATE TABLE Person
+(PersonID varchar (10) UNIQUE,
+FirstName varchar (25) NOT NULL,
+LastName varchar (25) NOT NULL,
+Birth date NOT NULL,
+Age int DEFAULT 18);
+
+
+INSERT INTO Person
+VALUES (1, 'Adam', 'West', '1928-09-19', 86);
+INSERT INTO Person (PersonID, FirstName, LastName, Birth)
+VALUES (2, 'Katy', 'Perry', '1984-10-25');
+
+INSERT INTO Person
+VALUES (3, 'Prince', 'Nelson', '1958-06-07', 57),
+(4, 'David', 'Bowie', '1947-01-08', 69),
+(5, 'Iman', 'Abdulmajid', '1955-07-25', 62),
+(6, 'Karen', 'Kilgariff', '1970-05-11', 47),
+(7, 'Georgia', 'Hardstark', '1980-06-08', 37),
+(8, 'David', 'Cross', '1964-04-04', 54),
+(9, 'Alia', 'Shawkat', '1989-04-18', 28),
+(10, 'Michael', 'Cera', '1988-06-07', 29);
+
+CREATE TABLE House
+(HouseID varchar(10) UNIQUE,
+City varchar(25) NOT NULL,
+Value int DEFAULT 100000,
+Owner varchar (10)
+);
+
+SELECT FirstName,LastName, Age
+FROM Person
+WHERE Age BETWEEN 20 AND 40;
+
+SELECT *
+FROM Person
+WHERE FirstName = 'David';
+
+SELECT *
+FROM Person
+WHERE Age > 50;

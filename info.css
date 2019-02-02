@@ -1,0 +1,12 @@
+.directors  {
+	border-style: double;
+	border-width: 4px;
+	border-color: #660000
+	border-height: 50px;
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-family: georgia;
+	font-size: 150%;
+}
